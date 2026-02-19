@@ -54,6 +54,7 @@ Or open in Colab via the badge above — no local setup needed.
 ## Video Outputs
 
 ![Preview](preview.png)
+
 *Left: Noisy input — Right: DnCNN denoised output*
 
 > **Note:** The denoised output appears slightly darker due to the model being trained for only 20 epochs on a small dataset. With more training epochs (50–100) and a larger dataset, brightness and detail are fully preserved. The noise reduction effect is clearly visible regardless.
