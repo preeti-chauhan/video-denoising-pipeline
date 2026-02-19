@@ -58,7 +58,7 @@ Or open in Colab via the badge above — no local setup needed.
 
 > **Note:** The denoised output appears slightly darker due to the model being trained for only 20 epochs on a small dataset. With more training epochs (50–100) and a larger dataset, brightness and detail are fully preserved. The noise reduction effect is clearly visible regardless.
 
-> Full videos: [`synthetic_noisy.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/synthetic_noisy.avi) · [`denoised_output.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/denoised_output.avi) (download to play)
+> Full videos (play in browser): [`synthetic_noisy.mp4`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/synthetic_noisy.mp4) · [`denoised_output.mp4`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/denoised_output.mp4)
 
 ## Using Your Own Video
 
@@ -73,8 +73,8 @@ SYNTHETIC_VIDEO = 'your_video.mp4'
 |---|---|
 | `video_denoising_pipeline.ipynb` | Main notebook |
 | `dncnn_weights.pth` | Saved model weights (generated after training) |
-| `synthetic_noisy.avi` | Synthetic noisy input video |
-| `denoised_output.avi` | DnCNN denoised output video |
+| `synthetic_noisy.mp4` | Synthetic noisy input video |
+| `denoised_output.mp4` | DnCNN denoised output video |
 | `README.md` | This file |
 
 ## References
