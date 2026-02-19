@@ -51,6 +51,13 @@ jupyter notebook video_denoising_pipeline.ipynb
 
 Or open in Colab via the badge above — no local setup needed.
 
+## Video Outputs
+
+> **Note:** GitHub does not play `.avi` files inline. To view the output videos, download them and open with VLC or QuickTime, or convert to `.mp4`.
+
+- [`synthetic_noisy.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/synthetic_noisy.avi) — noisy input video
+- [`denoised_output.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/denoised_output.avi) — DnCNN denoised output
+
 ## Using Your Own Video
 
 In Section 6, uncomment Option B:
@@ -64,7 +71,8 @@ SYNTHETIC_VIDEO = 'your_video.mp4'
 |---|---|
 | `video_denoising_pipeline.ipynb` | Main notebook |
 | `dncnn_weights.pth` | Saved model weights (generated after training) |
-| `denoised_output.avi` | Denoised video output (generated after running) |
+| `synthetic_noisy.avi` | Synthetic noisy input video |
+| `denoised_output.avi` | DnCNN denoised output video |
 | `README.md` | This file |
 
 ## References
