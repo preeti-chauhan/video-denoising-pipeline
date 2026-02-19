@@ -53,9 +53,8 @@ Or open in Colab via the badge above — no local setup needed.
 
 ## Video Outputs
 
-| Noisy Input | DnCNN Denoised |
-|---|---|
-| ![Noisy](preview_noisy.gif) | ![Denoised](preview_denoised.gif) |
+![Preview](preview.png)
+*Left: Noisy input — Right: DnCNN denoised output*
 
 > Full videos: [`synthetic_noisy.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/synthetic_noisy.avi) · [`denoised_output.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/denoised_output.avi) (download to play)
 
