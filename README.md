@@ -1,6 +1,7 @@
 # Video Denoising Pipeline
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/preeti-chauhan/video-denoising-pipeline/blob/main/video_denoising_pipeline.ipynb)
+[![View Notebook](https://img.shields.io/badge/Jupyter-View%20Notebook-orange?logo=jupyter)](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/video_denoising_pipeline.ipynb)
 
 Classical DSP vs. deep learning (DnCNN) for frame-by-frame video denoising.
 
