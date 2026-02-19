@@ -45,6 +45,13 @@ clean = noisy − DnCNN(noisy)
 
 *Results vary by noise level (default σ=25/255) and number of training epochs.*
 
+## Design Decisions
+
+- **Residual learning** — DnCNN predicts noise rather than the clean image, making the learning task simpler since noise has much smaller magnitude than image content
+- **Patch-based training** — crops 64×64 patches from frames for fixed input size, GPU memory efficiency, and more training samples per video
+- **PSNR + SSIM** — PSNR measures pixel-level error; SSIM captures perceptual structure — both together give a complete picture of denoising quality
+- **Classical baselines first** — establishes a performance floor before training the CNN, making the improvement quantifiable
+
 ## Requirements
 
 ```
