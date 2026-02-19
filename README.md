@@ -25,6 +25,14 @@ The network predicts the **noise residual**; the clean image is recovered as:
 clean = noisy − DnCNN(noisy)
 ```
 
+## Training Details
+
+- **Data** — 149 frames extracted from `clip.mp4` (80/10/10 train/val/test split)
+- **Optimizer** — Adam, lr=1e-3, StepLR decay (×0.5 every 10 epochs)
+- **Epochs** — 20 · **Batch size** — 32 · **Patch size** — 64×64
+- **Noise level** — σ=25/255 · **Loss** — MSE on noise residual
+- **Device** — GPU (Colab T4)
+
 ## Results
 
 | Method           | PSNR (dB) ↑ | SSIM ↑ |
@@ -71,11 +79,16 @@ SYNTHETIC_VIDEO = 'your_video.mp4'
 | File | Description |
 |---|---|
 | `video_denoising_pipeline.ipynb` | Main notebook |
+| `clip.mp4` | Source video used for training (Big Buck Bunny, 5s) |
 | `dncnn_weights.pth` | Saved model weights (generated after training) |
-| `synthetic_noisy.mp4` | Synthetic noisy input video |
+| `synthetic_noisy.mp4` | Noisy input video |
 | `denoised_output.mp4` | DnCNN denoised output video |
 | `README.md` | This file |
 
 ## References
 
 - Zhang, K. et al. (2017). *Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising.* IEEE TIP. [arXiv:1608.03981](https://arxiv.org/abs/1608.03981)
+
+## Acknowledgements
+
+Sample video: [Big Buck Bunny](https://peach.blender.org/) © Blender Foundation, licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
