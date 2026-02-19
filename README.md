@@ -53,10 +53,11 @@ Or open in Colab via the badge above — no local setup needed.
 
 ## Video Outputs
 
-> **Note:** GitHub does not play `.avi` files inline. To view the output videos, download them and open with VLC or QuickTime, or convert to `.mp4`.
+| Noisy Input | DnCNN Denoised |
+|---|---|
+| ![Noisy](preview_noisy.gif) | ![Denoised](preview_denoised.gif) |
 
-- [`synthetic_noisy.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/synthetic_noisy.avi) — noisy input video
-- [`denoised_output.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/denoised_output.avi) — DnCNN denoised output
+> Full videos: [`synthetic_noisy.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/synthetic_noisy.avi) · [`denoised_output.avi`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/denoised_output.avi) (download to play)
 
 ## Using Your Own Video
 
