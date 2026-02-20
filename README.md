@@ -93,7 +93,7 @@ SYNTHETIC_VIDEO = 'your_video.mp4'
 | `denoised_output.mp4` | DnCNN denoised output video |
 | `download.png` | Side-by-side comparison preview (all methods) |
 | `README.md` | This file |
-| `Reference/1608.03981v1.pdf` | DnCNN paper (Zhang et al., 2017) |
+| `References/1608.03981v1.pdf` | DnCNN paper (Zhang et al., 2017) |
 
 ## References
 
