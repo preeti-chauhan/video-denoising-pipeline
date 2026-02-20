@@ -45,6 +45,14 @@ clean = noisy − DnCNN(noisy)
 
 *Results vary by noise level (default σ=25/255) and number of training epochs.*
 
+## Video Outputs
+
+![Preview](download.png)
+
+*Clean · Noisy · Gaussian · Wiener · Total Variation · DnCNN — with PSNR scores*
+
+> Full videos (play in browser): [`synthetic_noisy.mp4`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/synthetic_noisy.mp4) · [`denoised_output.mp4`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/denoised_output.mp4)
+
 ## Design Decisions
 
 - **Residual learning** — DnCNN predicts noise rather than the clean image, making the learning task simpler since noise has much smaller magnitude than image content
@@ -65,14 +73,7 @@ jupyter notebook video_denoising_pipeline.ipynb
 ```
 
 Or open in Colab via the badge above — no local setup needed.
-
-## Video Outputs
-
-![Preview](download.png)
-
-*Clean · Noisy · Gaussian · Wiener · Total Variation · DnCNN — with PSNR scores*
-
-> Full videos (play in browser): [`synthetic_noisy.mp4`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/synthetic_noisy.mp4) · [`denoised_output.mp4`](https://github.com/preeti-chauhan/video-denoising-pipeline/blob/main/denoised_output.mp4)
+Enable GPU: `Runtime → Change runtime type → T4 GPU`
 
 ## Using Your Own Video
 
@@ -90,7 +91,9 @@ SYNTHETIC_VIDEO = 'your_video.mp4'
 | `dncnn_weights.pth` | Saved model weights (generated after training) |
 | `synthetic_noisy.mp4` | Noisy input video |
 | `denoised_output.mp4` | DnCNN denoised output video |
+| `download.png` | Side-by-side comparison preview (all methods) |
 | `README.md` | This file |
+| `Reference/1608.03981v1.pdf` | DnCNN paper (Zhang et al., 2017) |
 
 ## References
 
