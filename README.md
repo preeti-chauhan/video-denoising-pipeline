@@ -49,6 +49,8 @@ clean = noisy − DnCNN(noisy)
 
 *Results vary by noise level (default σ=25/255) and number of training epochs.*
 
+DnCNN achieves a ~3 dB PSNR gain over the best classical method (Total Variation), with a ~0.07 SSIM improvement — a meaningful perceptual difference. The residual learning formulation lets the network focus on learning noise structure rather than reconstructing the full image signal, which is why it outperforms filters that have no learned model of noise.
+
 ## Video Outputs
 
 ![Preview](download.png)
