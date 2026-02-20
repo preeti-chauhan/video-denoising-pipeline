@@ -5,6 +5,10 @@
 
 Classical DSP vs. deep learning (DnCNN) for frame-by-frame video denoising.
 
+## Motivation
+
+Video captured in low-light or compressed environments contains Gaussian noise that degrades visual quality. Classical filters (Gaussian, Wiener) reduce noise but blur edges and fine detail. DnCNN learns to separate noise from signal via residual learning — predicting only the noise component and subtracting it — preserving sharp edges and fine texture better than any classical method.
+
 ## Overview
 
 Builds a complete video denoising pipeline covering:
