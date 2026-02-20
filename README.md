@@ -27,7 +27,7 @@ clean = noisy − DnCNN(noisy)
 
 ## Training Details
 
-- **Data** — 149 frames extracted from `clip.mp4` (80/10/10 train/val/test split)
+- **Data** — 180 frames extracted from `clip.mp4` (forest nature, 80/10/10 train/val/test split)
 - **Optimizer** — Adam, lr=1e-3, StepLR decay (×0.5 every 10 epochs)
 - **Epochs** — 20 · **Batch size** — 32 · **Patch size** — 64×64
 - **Noise level** — σ=25/255 · **Loss** — MSE on noise residual
@@ -86,7 +86,7 @@ SYNTHETIC_VIDEO = 'your_video.mp4'
 | File | Description |
 |---|---|
 | `video_denoising_pipeline.ipynb` | Main notebook |
-| `clip.mp4` | Source video used for training (Big Buck Bunny, 5s) |
+| `clip.mp4` | Source video used for training (forest nature, 6s) |
 | `dncnn_weights.pth` | Saved model weights (generated after training) |
 | `synthetic_noisy.mp4` | Noisy input video |
 | `denoised_output.mp4` | DnCNN denoised output video |
@@ -98,4 +98,4 @@ SYNTHETIC_VIDEO = 'your_video.mp4'
 
 ## Acknowledgements
 
-Sample video: [Big Buck Bunny](https://peach.blender.org/) © Blender Foundation, licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+Sample video: *FOREST 4K — American Nature Relaxation Film* by [Nature Relaxation Films](https://www.youtube.com/watch?v=VNu15Qqomt8), used for research and educational purposes.
